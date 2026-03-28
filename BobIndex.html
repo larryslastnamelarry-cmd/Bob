@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BOB</title>
+
+<link rel="icon" href="https://image2url.com/r2/default/images/1774661014525-494ba53b-dbdf-445b-97a6-b6a0820f57f4.png">
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        background: linear-gradient(135deg, #ffa500, #a0522d);
+        background-attachment: fixed;
+    }
+
+    .navbar {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+    }
+
+    .navbar img {
+        height: 40px;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        display: inline-block;
+        transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+        margin-right: 10px;
+    }
+
+    .navbar a:hover {
+        background: rgba(0, 0, 0, 0.3);
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .download-btn {
+        color: white;
+        text-decoration: none;
+        font-size: 22px;
+        padding: 15px 30px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .download-btn:hover {
+        background: rgba(0, 0, 0, 0.7);
+        transform: scale(1.1);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .neon {
+        font-size: 100px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow:
+            0 0 5px #ffcc00,
+            0 0 10px #ff9900,
+            0 0 20px #ff6600,
+            0 0 40px #ff3300;
+        animation: glow 1.5s infinite alternate;
+        text-align: center;
+    }
+
+    .subtitle {
+        margin-top: 10px;
+        font-size: 24px;
+        opacity: 0.9;
+        text-shadow: 0 0 5px rgba(0,0,0,0.6);
+    }
+
+    @keyframes glow {
+        from {
+            text-shadow:
+                0 0 5px #ffcc00,
+                0 0 10px #ff9900,
+                0 0 20px #ff6600,
+                0 0 40px #ff3300;
+        }
+        to {
+            text-shadow:
+                0 0 10px #fff,
+                0 0 20px #ffcc00,
+                0 0 30px #ff9900,
+                0 0 50px #ff6600;
+        }
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="navbar">
+    <img src="https://image2url.com/r2/default/images/1774661014525-494ba53b-dbdf-445b-97a6-b6a0820f57f4.png" alt="logo">
+    <a href="#home">Home</a>
+    <a href="#download">Download</a>
+</div>
+
+<div id="home" class="section">
+    <div>
+        <div class="neon">BOB</div>
+        <div class="subtitle">so cool frfr</div>
+    </div>
+</div>
+
+<div id="download" class="section">
+    <a href="BOB.zip" download class="download-btn">Download BOB.zip</a>
+</div>
+
+</body>
+</html>
